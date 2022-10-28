@@ -8,7 +8,7 @@ import { LearningAppService } from '../services/learning-app.service';
 })
 export class DashboardComponent implements OnInit {
   public learningAppCurrentlyAttending: any = null;
-  public learningAppCourseCategories: any = null;
+  public learningAppCategories: any = null;
   public learningAppPopularLecturers: any = null;
 
   constructor(
@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
     // depending on implementation, data subscriptions might need to be unsubbed later
     this.learningAppService.getCurrentlyAttending().subscribe(data => this.learningAppCurrentlyAttending = data);
-    this.learningAppService.getCourseCategories().subscribe(data => this.learningAppCourseCategories = data);
+    this.learningAppService.getCategories().subscribe(data => this.learningAppCategories = data);
     this.learningAppService.getPopularLecturers().subscribe(data => this.learningAppPopularLecturers = data);
   }
 }

@@ -6,11 +6,11 @@
     <div class="row-layout group_2">
       <igx-card type="outlined" *ngFor="let item of learningAppCurrentlyAttending" class="card">
         <igx-card-media height="120px">
-          <img [src]="item.COURSEPIC" class="image" />
+          <img [src]="item.Image" class="image" />
         </igx-card-media>
         <igx-card-header>
           <h3 igxCardHeaderTitle>
-            {{ item.COURSE }}
+            {{ item.Course }}
           </h3>
           <h5 igxCardHeaderSubtitle>
           </h5>
@@ -36,10 +36,10 @@
       Explore new categories
     </h6>
     <div class="row-layout group_4">
-      <div *ngFor="let item of learningAppCourseCategories" class="column-layout group_5">
-        <img [src]="item.CATEGORY-PIC" class="image_1" />
+      <div *ngFor="let item of learningAppCategories" class="column-layout group_5">
+        <img [src]="item.Image" class="image_1" />
         <p class="igx-typography__subtitle-1 content">
-          {{ item.CATEGORY }}
+          {{ item.Category }}
         </p>
       </div>
     </div>
@@ -58,13 +58,13 @@
         <span igxListLine>
           <div class="row-layout group_7">
             <div class="row-layout group_8">
-              <igx-avatar [src]="item.LECTURER-PIC" size="medium" [roundShape]="true" class="avatar"></igx-avatar>
+              <igx-avatar [src]="item.Avatar" size="medium" [roundShape]="true" class="avatar"></igx-avatar>
               <div class="column-layout group_9">
                 <p class="igx-typography__subtitle-2 content">
-                  {{ item.LECTURER }}
+                  {{ item.Lecturer }}
                 </p>
                 <p class="igx-typography__body-2 content_1">
-                  {{ item.LECTURER-ROLE }}
+                  {{ item.Role }}
                 </p>
               </div>
               <div class="row-layout rating-2">
@@ -86,7 +86,7 @@
               </div>
               <div class="row-layout group_10">
                 <igx-chip class="chip">
-                  {{ item.TAG }}
+                  {{ item.Tag }}
                 </igx-chip>
               </div>
             </div>

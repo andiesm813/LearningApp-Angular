@@ -7,13 +7,13 @@
       <igx-list-item [isHeader]="false" *ngFor="let item of learningAppAllCourses" class="list-item">
         <span igxListLine>
           <div class="row-layout group_2">
-            <img [src]="item.COURSEPIC" class="image" />
+            <img [src]="item.Image" class="image" />
             <div class="column-layout group_3">
               <p class="igx-typography__subtitle-2 content">
-                {{ item.COURSE }}
+                {{ item.Course }}
               </p>
               <p class="igx-typography__caption text">
-                {{ item.SHORT-DESCR }}
+                {{ item.Intro }}
               </p>
               <div class="row-layout group_4">
                 <div class="row-layout rating-11">
@@ -34,10 +34,10 @@
                   </igx-icon>
                 </div>
                 <igx-chip class="chip">
-                  {{ item.LEVEL }}
+                  {{ item.Level }}
                 </igx-chip>
                 <igx-chip class="chip">
-                  {{ item.TAG }}
+                  {{ item.Tag }}
                 </igx-chip>
               </div>
             </div>
