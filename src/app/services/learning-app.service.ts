@@ -11,7 +11,7 @@ export class LearningAppService {
   public getCurrentlyAttending(): Observable<any> {
     return this.http.get(`https://excel2json.io/api/share/411814c4-bebf-4b2c-e661-08dab79fa5b4`);
   }
-  public getCourseCategories(): Observable<any> {
+  public getCategories(): Observable<any> {
     return this.http.get(`https://excel2json.io/api/share/c7c0f004-5d70-41db-e663-08dab79fa5b4`);
   }
   public getPopularLecturers(): Observable<any> {
