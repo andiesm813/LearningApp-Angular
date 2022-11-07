@@ -16,23 +16,7 @@
                 {{ item.Intro }}
               </p>
               <div class="row-layout group_4">
-                <div class="row-layout rating-11">
-                  <igx-icon class="icon">
-                    star
-                  </igx-icon>
-                  <igx-icon class="icon">
-                    star
-                  </igx-icon>
-                  <igx-icon class="icon">
-                    star
-                  </igx-icon>
-                  <igx-icon class="icon">
-                    star
-                  </igx-icon>
-                  <igx-icon class="icon">
-                    star
-                  </igx-icon>
-                </div>
+                <igc-rating [(ngModel)]="item.Rating" size="small" class="rating"></igc-rating>
                 <igx-chip class="chip">
                   {{ item.Level }}
                 </igx-chip>
@@ -56,23 +40,7 @@
           Web Development Basics
         </h5>
         <div class="row-layout group_9">
-          <div class="row-layout rating">
-            <igx-icon class="icon_1">
-              star
-            </igx-icon>
-            <igx-icon class="icon_1">
-              star
-            </igx-icon>
-            <igx-icon class="icon_1">
-              star
-            </igx-icon>
-            <igx-icon class="icon_1">
-              star
-            </igx-icon>
-            <igx-icon class="icon_2">
-              star_border
-            </igx-icon>
-          </div>
+          <igc-rating [(ngModel)]="value" size="medium" class="rating"></igc-rating>
           <igx-chip class="chip">
             Beginner
           </igx-chip>
@@ -106,13 +74,13 @@
         Course Content
       </h6>
       <div class="row-layout group_14">
-        <igx-icon class="icon_3">
+        <igx-icon class="icon">
           book
         </igx-icon>
         <p class="text_2">
           40 lectures
         </p>
-        <igx-icon class="icon_3">
+        <igx-icon class="icon">
           access_time
         </igx-icon>
         <p class="content">
@@ -131,7 +99,7 @@
                 </span>
                 <span igxListLineTitle>Welcome to Web Development Basics</span>
                 <span igxListAction>
-                  <igx-icon class="icon_4">
+                  <igx-icon class="icon_1">
                     check_circle
                   </igx-icon>
                 </span>
@@ -142,7 +110,7 @@
                 </span>
                 <span igxListLineTitle>Downloadable Course Resources</span>
                 <span igxListAction>
-                  <igx-icon class="icon_4">
+                  <igx-icon class="icon_1">
                     check_circle
                   </igx-icon>
                 </span>
@@ -153,7 +121,7 @@
                 </span>
                 <span igxListLineTitle>Setup and Software Requirements</span>
                 <span igxListAction>
-                  <igx-icon class="icon_4">
+                  <igx-icon class="icon_1">
                     check_circle
                   </igx-icon>
                 </span>
@@ -173,7 +141,7 @@
                 </span>
                 <span igxListLineTitle>Getting to Know HTML Tags</span>
                 <span igxListAction>
-                  <igx-icon class="icon_4">
+                  <igx-icon class="icon_1">
                     check_circle
                   </igx-icon>
                 </span>
@@ -184,7 +152,7 @@
                 </span>
                 <span igxListLineTitle>Viewing HTML Tags in Page Source</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -195,7 +163,7 @@
                 </span>
                 <span igxListLineTitle>Components and Structure of a Website</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -206,7 +174,7 @@
                 </span>
                 <span igxListLineTitle>Adding Tag Attributes</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -226,7 +194,7 @@
                 </span>
                 <span igxListLineTitle>Setting Up a Basic HTML Page</span>
                 <span igxListAction>
-                  <igx-icon class="icon_4">
+                  <igx-icon class="icon_1">
                     check_circle
                   </igx-icon>
                 </span>
@@ -237,7 +205,7 @@
                 </span>
                 <span igxListLineTitle>Creating Links and Formatting Text</span>
                 <span igxListAction>
-                  <igx-icon class="icon_4">
+                  <igx-icon class="icon_1">
                     check_circle
                   </igx-icon>
                 </span>
@@ -248,7 +216,7 @@
                 </span>
                 <span igxListLineTitle>Adding Basic Page Content</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -259,7 +227,7 @@
                 </span>
                 <span igxListLineTitle>Browser Favicon</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -279,7 +247,7 @@
                 </span>
                 <span igxListLineTitle>CSS Basics - Part 1</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -290,7 +258,7 @@
                 </span>
                 <span igxListLineTitle>CSS Basics - Part 2</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -301,7 +269,7 @@
                 </span>
                 <span igxListLineTitle>Getting Started with External CSS</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -312,7 +280,7 @@
                 </span>
                 <span igxListLineTitle>Common CSS Properties</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -323,7 +291,7 @@
                 </span>
                 <span igxListLineTitle>Setting Colors with CSS</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -343,7 +311,7 @@
                 </span>
                 <span igxListLineTitle>Adding Paragraphs</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -354,7 +322,7 @@
                 </span>
                 <span igxListLineTitle>Creating Line Breaks</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -365,7 +333,7 @@
                 </span>
                 <span igxListLineTitle>Working with Headings</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -376,7 +344,7 @@
                 </span>
                 <span igxListLineTitle>Good Practices</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -396,7 +364,7 @@
                 </span>
                 <span igxListLineTitle>Inserting Images With the &lt;img&gt; Tag</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -407,7 +375,7 @@
                 </span>
                 <span igxListLineTitle>Image Attributes</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -418,7 +386,7 @@
                 </span>
                 <span igxListLineTitle>Image Formatting</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -438,7 +406,7 @@
                 </span>
                 <span igxListLineTitle>Creating an Unordered List</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -449,7 +417,7 @@
                 </span>
                 <span igxListLineTitle>Unordered List Sub-Levels</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -460,7 +428,7 @@
                 </span>
                 <span igxListLineTitle>Creating an Ordered List</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -471,7 +439,7 @@
                 </span>
                 <span igxListLineTitle>Formating Lists</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -491,7 +459,7 @@
                 </span>
                 <span igxListLineTitle>Basics of HTML Tables &amp; Examples</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -502,7 +470,7 @@
                 </span>
                 <span igxListLineTitle>Creating a Basic HTML Table</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -513,7 +481,7 @@
                 </span>
                 <span igxListLineTitle>Creating a Basic HTML Table</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -524,7 +492,7 @@
                 </span>
                 <span igxListLineTitle>Additional Table Formatting</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -544,7 +512,7 @@
                 </span>
                 <span igxListLineTitle>Introduction to Forms</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -555,7 +523,7 @@
                 </span>
                 <span igxListLineTitle>Creating HTML Input Text Controls</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -566,7 +534,7 @@
                 </span>
                 <span igxListLineTitle>Creating HTML Form Labels</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -577,7 +545,7 @@
                 </span>
                 <span igxListLineTitle>Adding an HTML Form Button to Submit Form Data</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -597,7 +565,7 @@
                 </span>
                 <span igxListLineTitle>Static vs. Dynamic Webpages</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -608,7 +576,7 @@
                 </span>
                 <span igxListLineTitle>JavaScript Basics: Fundamental Syntax</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -619,7 +587,7 @@
                 </span>
                 <span igxListLineTitle>Using Alerts and Prompts</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -630,7 +598,7 @@
                 </span>
                 <span igxListLineTitle>Events</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>
@@ -641,7 +609,7 @@
                 </span>
                 <span igxListLineTitle>Testing JavaScript</span>
                 <span igxListAction>
-                  <igx-icon class="icon_5">
+                  <igx-icon class="icon_2">
                     playlist_play
                   </igx-icon>
                 </span>

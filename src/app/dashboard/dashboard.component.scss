@@ -46,6 +46,7 @@
 }
 .card {
   height: max-content;
+  max-width: 280px;
   flex-grow: 1;
   flex-basis: 0;
 }
@@ -315,18 +316,6 @@
   height: max-content;
   min-width: min-content;
 }
-.icon {
-  font-size: 24px;
-  width: 24px;
-  height: 24px;
-  color: #E99C33;
-}
-.icon_1 {
-  font-size: 24px;
-  width: 24px;
-  height: 24px;
-  color: hsla(var(--igx-grays-500));
-}
 .chip {
   width: max-content;
   height: max-content;
@@ -384,14 +373,14 @@
   min-width: 160px;
   flex-shrink: 0;
 }
+.user-input {
+  width: max-content;
+  height: max-content;
+}
 .button_3 {
   height: max-content;
   min-width: min-content;
   flex-shrink: 0;
-}
-.checkbox {
-  width: max-content;
-  height: max-content;
 }
 .list {
   height: max-content;

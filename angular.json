@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "learning-dashboard-v-2": {
+    "learning-dashboard-final": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/learning-dashboard-v-2",
+            "outputPath": "dist/learning-dashboard-final",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -74,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "learning-dashboard-v-2:build:production"
+              "browserTarget": "learning-dashboard-final:build:production"
             },
             "development": {
-              "browserTarget": "learning-dashboard-v-2:build:development"
+              "browserTarget": "learning-dashboard-final:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "learning-dashboard-v-2:build"
+            "browserTarget": "learning-dashboard-final:build"
           }
         },
         "test": {
@@ -120,7 +120,7 @@
       }
     }
   },
-  "defaultProject": "learning-dashboard-v-2",
+  "defaultProject": "learning-dashboard-final",
   "cli": {
     "schematicCollections": ["@angular-eslint/schematics"]
   }

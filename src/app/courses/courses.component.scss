@@ -68,13 +68,6 @@
   height: 30px;
   min-height: 30px;
 }
-.rating-11 {
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
-  position: relative;
-  height: 30px;
-}
 .group_5 {
   background-color: white;
   justify-content: flex-start;
@@ -128,13 +121,6 @@
   position: relative;
   margin: 0 0 16px;
   min-width: 50px;
-}
-.rating {
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
-  position: relative;
-  flex-shrink: 0;
 }
 .group_10 {
   justify-content: flex-start;
@@ -209,12 +195,6 @@
   height: max-content;
   min-width: min-content;
 }
-.icon {
-  font-size: 18px;
-  width: 18px;
-  height: 18px;
-  color: #E99C33;
-}
 .chip {
   position: relative;
   min-width: 50px;
@@ -232,18 +212,6 @@
   height: max-content;
   min-width: min-content;
 }
-.icon_1 {
-  font-size: 24px;
-  width: 24px;
-  height: 24px;
-  color: #E99C33;
-}
-.icon_2 {
-  font-size: 24px;
-  width: 24px;
-  height: 24px;
-  color: hsla(var(--igx-grays-500));
-}
 .avatar {
   --background: none;
   margin: 0 24px 0 0;
@@ -253,7 +221,7 @@
   height: max-content;
   min-width: min-content;
 }
-.icon_3 {
+.icon {
   font-size: 24px;
   width: 24px;
   height: 24px;
@@ -269,13 +237,13 @@
   background-color: hsla(var(--igx-surface-500));
   --background: none;
 }
-.icon_4 {
+.icon_1 {
   font-size: 24px;
   width: 24px;
   height: 24px;
   color: hsla(var(--igx-success-500));
 }
-.icon_5 {
+.icon_2 {
   font-size: 24px;
   width: 24px;
   height: 24px;
@@ -289,4 +257,8 @@
 .list_1 {
   height: max-content;
   min-width: max-content;
+}
+.rating {
+  width: max-content;
+  height: max-content;
 }

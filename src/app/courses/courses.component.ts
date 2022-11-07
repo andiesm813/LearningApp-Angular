@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { LearningAppService } from '../services/learning-app.service';
+import { defineComponents, IgcRatingComponent } from 'igniteui-webcomponents';
+
+defineComponents(IgcRatingComponent);
 
 @Component({
   selector: 'app-courses',
@@ -8,6 +11,7 @@ import { LearningAppService } from '../services/learning-app.service';
 })
 export class CoursesComponent implements OnInit {
   public learningAppAllCourses: any = null;
+  public value = '4';
 
   constructor(
     private learningAppService: LearningAppService,

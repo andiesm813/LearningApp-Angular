@@ -4,11 +4,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { IgxCardModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxListModule, IgxAvatarModule, IgxChipsModule, IgxCheckboxModule, IgxAccordionModule, IgxExpansionPanelModule } from '@infragistics/igniteui-angular';
+import { IgxCardModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxListModule, IgxAvatarModule, IgcFormsModule, IgxChipsModule, IgxCheckboxModule, IgxAccordionModule, IgxExpansionPanelModule } from '@infragistics/igniteui-angular';
 import { FormsModule } from '@angular/forms';
 import { CoursesComponent } from './courses/courses.component';
-import { TasksComponent } from './tasks/tasks.component';
 import { ProgressComponent } from './progress/progress.component';
+import { TasksComponent } from './tasks/tasks.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -17,8 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     DashboardComponent,
     CoursesComponent,
-    TasksComponent,
     ProgressComponent,
+    TasksComponent,
     ProfileComponent
   ],
   imports: [
@@ -32,6 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
     IgxIconModule,
     IgxListModule,
     IgxAvatarModule,
+    IgcFormsModule,
     IgxChipsModule,
     IgxCheckboxModule,
     FormsModule,
