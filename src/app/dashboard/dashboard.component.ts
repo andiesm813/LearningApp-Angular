@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { LearningAppService } from '../services/learning-app.service';
+import { defineComponents, IgcRatingComponent } from 'igniteui-webcomponents';
+
+defineComponents(IgcRatingComponent);
 
 @Component({
   selector: 'app-dashboard',

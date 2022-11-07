@@ -1,4 +1,4 @@
-# Learning Dashboard v2
+# Learning Dashboard - Final
 
 This project was generated with [App Builder Code Gen](https://www.infragistics.com/products/appbuilder).
 

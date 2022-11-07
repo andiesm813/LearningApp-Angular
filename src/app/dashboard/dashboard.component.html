@@ -68,21 +68,7 @@
                 </p>
               </div>
               <div class="row-layout rating-2">
-                <igx-icon class="icon">
-                  star
-                </igx-icon>
-                <igx-icon class="icon">
-                  star
-                </igx-icon>
-                <igx-icon class="icon">
-                  star
-                </igx-icon>
-                <igx-icon class="icon">
-                  star
-                </igx-icon>
-                <igx-icon class="icon_1">
-                  star_border
-                </igx-icon>
+                <igc-rating [(ngModel)]="item.Rating" size="medium" class="user-input"></igc-rating>
               </div>
               <div class="row-layout group_10">
                 <igx-chip class="chip">
@@ -177,7 +163,7 @@
           Due: Tomorrow
         </p>
       </div>
-      <igx-checkbox class="checkbox"></igx-checkbox>
+      <igx-checkbox class="user-input"></igx-checkbox>
     </div>
     <div class="row-layout group_24">
       <div class="column-layout group_23">
@@ -188,7 +174,7 @@
           Due: Sept 5th
         </p>
       </div>
-      <igx-checkbox class="checkbox"></igx-checkbox>
+      <igx-checkbox class="user-input"></igx-checkbox>
     </div>
     <div class="row-layout group_25">
       <div class="column-layout group_23">
@@ -199,7 +185,7 @@
           Due: Sept 5th
         </p>
       </div>
-      <igx-checkbox class="checkbox"></igx-checkbox>
+      <igx-checkbox class="user-input"></igx-checkbox>
     </div>
   </div>
 </div>
